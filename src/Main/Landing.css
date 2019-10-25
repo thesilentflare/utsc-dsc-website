@@ -1,0 +1,488 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footers */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+.footer ul{
+  padding-inline-start: 0 !important;
+  font-size: 15px;
+}
+#map {
+  padding: 5%  2%;
+}
+.footer-center{
+  text-align: center;
+}
+.footer-right{
+  text-align: center;
+}
+.footer,
+.push {
+  height: 50px;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+.navbar-nav{
+  text-align: center;
+}
+.links{
+  padding-top: 0.4vw;
+}
+@keyframes open {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(90deg);}
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+.hamburger{
+  font-size: 25px;
+  color: gray;
+}
+.hamburger:hover{
+  color: rgb(26, 26, 26);
+}
+.logo{
+  padding: 0;
+  margin: 0;
+}
+.active{
+  box-shadow: none;
+}
+.nav-link{
+  background-color: rgba(255, 255, 255, 0);
+}
+.hook{
+  display: flex;
+  width: 100%;
+  max-width:100%;
+  margin: 100px 0 0 0 !important;
+  padding: 5% 5% 5% 5%!important;
+  justify-content: space-between;
+  background-color: white !important;
+  z-index: 2;
+  border-radius: 0 !important;
+}
+.hook-left{
+ width: 80%;
+}
+.hook-left p{
+  font-size: 4vmax;
+}
+.hook-right{
+  width: 30%;
+  text-align: right;
+}
+.hook-right h2{
+  font-size: 4vmax;
+  color: rgb(0, 32, 78);
+  font-weight: bold;
+}
+.section-about{
+  padding: 4em;
+  padding-top: 2em;
+  padding-bottom: 1%;
+  font-size: 1.8vw;
+  width: 80%;
+  margin: auto;
+}
+.section-about h3{
+  font-size: 3vw;
+  font-weight: bold;
+  padding: 1% 0;
+}
+.content{
+
+}
+.section-calendar{
+  display: block;
+  text-align: center;
+  width: 80%;
+  padding-bottom: 5%;
+  font-size: 3vw;
+  margin-left: auto;
+  margin-right: auto;
+  /* If need minimum sizing */
+  #min-width: 250px;
+}
+.section-calendar h2{
+  font-size: 3vw;
+}
+.typewriter {
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(152, 152, 152);
+	  display: inline-block;
+    padding-top: 3%;
+}
+
+.typewriter-text {
+    display: inline-block;
+    visibility: hidden;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	  animation: 2.2s show, typing 3.5s steps(60, end) 2s, blink 1s step-end infinite;
+    animation-fill-mode: forwards;
+    white-space: nowrap;
+    font-size: 1.3vmax;
+    font-weight: 700;
+    border-right: 4px solid gray;
+    box-sizing: border-box;
+}
+@keyframes show {
+  99%{
+    visibility: hidden;
+  }
+  100%{
+    visibility: visible;
+  }
+}
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: gray;
+    }
+}
+.section-carousel{
+  padding: 3% 5%;
+  padding-top: 0%;
+  background-color: rgb(214, 214, 214);
+  z-index: 1;
+  max-height: 100vw;
+}
+.section-carousel h2{
+  padding: 1% 0;
+
+}
+.carousel{
+  margin: 3px auto;
+  margin-top: 0;
+  height: 100% !important;
+}
+.section-goals{
+  padding: 0 10%;
+  padding-bottom: 5%;
+}
+.col-goals{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.event-container{
+  height: 250px;
+  width: 100%;
+  /* padding: 3% !important; */
+  /* background-color: white; */
+  /* margin: 5% auto !important;*/
+  /* padding: 5%; */
+    z-index: 1;
+
+}
+.carousel-caption{
+  color: black !important;
+}
+.carousel-control-next, .carousel-control-prev{
+  width: 15vw !important;
+}
+.event{
+  display: block !important;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  #border: 1px white solid;
+  border-radius: 25px;
+  padding-bottom: 0;
+  background-color: white;
+
+}
+.event-upper{
+  display: flex !important;
+  padding: 2% 2%;
+}
+.img-responsive{
+  max-width: 100%;
+  height: auto;
+  width: 15vw;
+  object-fit: contain;
+}
+.event-details{
+  text-align: center;
+  float: right;
+  padding: 0% 5%;
+  padding-top: 2%;
+
+}
+.event-details h3{
+  font-size: 1vw;
+}
+.event-details p{
+  font-size: 1vw;
+}
+.event-name{
+  font-size: 2.3vw !important;
+  padding: 0;
+  padding-top: 1em;
+  line-height: initial;
+}
+.arrows{
+  z-index: 2;
+}
+.card{
+  border: none !important;
+}
+.card-image{
+  /* height: 100% !important; */
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  #border-radius: 20px;
+}
+.goals-row{
+  padding: 0 12% !important;
+}
+.rounded-frame {
+  border-radius: 15px;
+}
+@media (min-width: 768px){
+  .col-md-3{
+    flex: 0 0 33% !important;
+    max-width: 33% !important;
+  }
+}
+.goals-details h5{
+  font-size: 1.4vw;
+}
+.goals-details strong{
+  font-size: 1.8vw;
+}
+.goals-details p{
+  font-size: 0.8vw;
+}
+.event-visual{
+  display: flex;
+  height: 25px;
+  width: 50%;
+  border-radius: 0px 0px 25px 25px;
+  position: absolute;
+  bottom: 0;
+}
+.event-visual-divs{
+  flex: 0 0 25% !important;
+  max-width: 25% !important;
+  height: 100%;
+}
+.carousel-caption{
+  padding-bottom: 0 !important;
+}
+@media screen and (max-width: 1000px) {
+  .goals-details h5{
+    font-size: 4vw;
+  }
+  .goals-details strong{
+    font-size: 3vw;
+  }
+  .goals-details p{
+    font-size: 2.5vw;
+  }
+  .event-details h3{
+    font-size: 3.5vw;
+  }
+  .event-details p{
+    font-size: 3.4vw;
+  }
+  .event{
+    width: 100%;
+    max-height: 100%;
+  }
+  .carousel-control-next, .carousel-control-prev{
+    visibility: hidden;
+  }
+  .section-carousel .h2{
+    font-size: 3vw;
+  }
+  .section-about{
+    font-size: 2.2vw;
+    padding: 1em;
+  }
+  .event-container{
+    height: 80vw;
+  }
+  .event-visual{
+    width: 100% !important;
+  }
+  .section-carousel{
+    max-height: 125vw;
+  }
+  .hook-left{
+    width: 90%;
+  }
+  .event-upper{
+    display: block !important;
+  }
+  .img-responsive{
+    margin-left: 36vw;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .hook-left{
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .event-details h3{
+    font-size: 1.2rem;
+  }
+  .event-details p{
+    font-size: 1.3rem;
+  }
+  .event-name{
+    font-size: 2.3rem !important;
+    line-height: initial !important;
+  }
+  .section-about{
+    font-size: 1.6rem;
+  }
+  .event-container{
+    height: 500px !important;
+  }
+}
+@media screen and (max-width: 700px){
+  .event-name{
+    font-size: 4vw !important;
+    padding: 0;
+  }
+  .section-carousel{
+    #max-height: 600px;
+  }
+  .event{
+
+  }
+  .goals-details h5{
+    font-size: 4vw;
+  }
+  .goals-details strong{
+    font-size: 3vw;
+  }
+  .goals-details p{
+    font-size: 2.5vw;
+  }
+  .event-details h3{
+    font-size: 3.5vw;
+  }
+  .event-details p{
+    font-size: 3.4vw;
+  }
+  .event{
+    width: 100%;
+    max-height: 100%;
+  }
+  .carousel-control-next, .carousel-control-prev{
+    visibility: hidden;
+  }
+  .section-carousel .h2{
+    font-size: 3vw;
+  }
+  .section-about{
+    font-size: 3.3vw;
+        padding: 1em;
+  }
+  .event-container{
+    height: 90vw;
+  }
+  .event-visual{
+    width: 100% !important;
+  }
+  .hook-left{
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px){
+
+}
+@media screen and (min-width: 1200px) {
+  .event-container{
+    height: 30vw;
+  }
+  .section-carousel{
+    max-height: 100vw !important;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .event-container{
+    height: 30vw;
+  }
+  .foot{
+    padding-left: 1em;
+  }
+}
+
+.hook-left .h5-responsive{
+  margin-bottom: 0;
+}
+@media screen and (max-width: 450px){
+  .event-container{
+    height: 100vw !important;
+  }
+  .section-carousel{
+    max-height: 100%;
+  }
+  .event-upper{
+    display: block !important;
+  }
+  .img-responsive{
+    margin-left: 36vw;
+  }
+  .h1-responsive{
+    font-size: 400% !important;
+  }
+  .h6-responsive{
+    font-size: 200% !important;
+  }
+  .section-calendar{
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 1400px){
+  .section-carousel{
+    max-height: 72vh;
+  }
+}
+.section-newsletter{
+  text-align: center;
+  padding: 4em;
+  padding-top: 1em;
+  padding-bottom: 2%;
+  font-size: 1.8vw;
+  width: 80%;
+  margin: auto;
+}
+.section-nesletter h2{
+  padding-bottom: 2em;
+}

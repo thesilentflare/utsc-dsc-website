@@ -1,0 +1,8 @@
+{
+  "short_name": "DSC UTSC",
+  "name": "Developer Student Club UTSC Website",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
