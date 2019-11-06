@@ -14,7 +14,9 @@ const firebaseConfig = {
 const fb = firebase.initializeApp(firebaseConfig);
 
 const db = fb.firestore();
+const storage = firebase.storage();
 
 module.exports = {
-    db
-}
+    db,
+    storage
+};

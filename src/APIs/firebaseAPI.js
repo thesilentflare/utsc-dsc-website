@@ -1,7 +1,9 @@
 require('firebase');
 require('firebase/firestore');
 const db = require('./firebase.js')['db'];
+const storage = require('./firebase.js')['storage'];
 
+const DEFAULT_EVENT_IMAGES_ROOT_PATH = 'Event_Images/';
 /**
  * It returns all the events in the database in order of creation
  * the format is as follows:
@@ -34,7 +36,6 @@ function getEvents() {
             reject(error);
         });
     })
-
 }
 
 /**
@@ -48,9 +49,25 @@ function test() {
       })
       .catch(err => console.log(err));
 }
+async function getImagesForEvent(event) {
+    const folderRef = storage.ref().child(`${DEFAULT_EVENT_IMAGES_ROOT_PATH}/${event}`);
+    let imageUrls = [];
+
+    await folderRef.listAll().then(async function(res) {
+       await res.items.forEach(function(itemRef) {
+          itemRef.getDownloadURL().then(function(url) {
+              imageUrls.push(url);
+          });
+       });
+    }).catch(function(error){
+        console.log(error);
+    });
+    return imageUrls;
+}
 
 module.exports = {
     getEvents,
     test,
-    getTimestamp
-}
+    getTimestamp,
+    getImagesForEvent
+};

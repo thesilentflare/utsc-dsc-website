@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import {Carousel} from 'react-bootstrap';
 import {MDBBtn, MDBCol} from 'mdbreact';
-import {getEvents} from '../../APIs/firebaseAPI';
+import {getEvents, getImagesForEvent} from '../../APIs/firebaseAPI';
 
 class EventCarousel extends Component{
   constructor(){
@@ -12,7 +12,9 @@ class EventCarousel extends Component{
   }
   // Component did mount function that grabs event data from firebaseAPI
   async componentDidMount(){
-    //test();
+    // To get images for certain event use this function and provide the event name matching to document key.
+    // const imageUrls = await getImagesForEvent('CloudJam_2019_10_05');
+
     var div = this.refs.carousel;
     var eventsList = [];
     var events = getEvents().then((result)=> {
