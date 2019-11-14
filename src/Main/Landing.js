@@ -22,6 +22,7 @@ class Landing extends Component{
   scrollTo = (ref) => {
     var r = ref;
     window.scrollTo(0, r.offsetTop-100);
+    //FUNCTION DOES NOT EXIST.
     this.collapse();
   }
   // main render function
@@ -43,27 +44,27 @@ class Landing extends Component{
                   <MDBNavbarNav right>
                     {/*Change/Add navbar links here*/}
                     <MDBNavItem className="links">
-                      <MDBNavLink  onClick={()=>this.scrollTo(this.refs.carousel)}>
+                      <MDBNavLink to="/" onClick={()=>this.scrollTo(this.refs.carousel)}>
                         Events
                       </MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem className="links">
-                      <MDBNavLink onClick={()=>this.scrollTo(this.refs.about)}>
+                      <MDBNavLink to="/" onClick={()=>this.scrollTo(this.refs.about)}>
                         About
                       </MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem className="links">
-                      <MDBNavLink onClick={()=>this.scrollTo(this.refs.calendar)}>
+                      <MDBNavLink to="/" onClick={()=>this.scrollTo(this.refs.calendar)}>
                         Calendar
                       </MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem className="links">
-                      <MDBNavLink onClick={()=>this.scrollTo(this.refs.footer)}>
+                      <MDBNavLink to="/" onClick={()=>this.scrollTo(this.refs.footer)}>
                         Contact
                       </MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem>
-                      <MDBNavLink onClick={()=>this.scrollTo(this.refs.subscribe)}>
+                      <MDBNavLink to="/" onClick={()=>this.scrollTo(this.refs.subscribe)}>
                         <Button variant="contained" color="primary">
                           Subscribe
                         </Button>
@@ -105,7 +106,7 @@ class Landing extends Component{
               students on the Saint George, Missisauga, and Scarborough campuses with
               opportunities to understand, work with the latest and greatest in technology.
               We focus on promoting student innovation, enabling collaboration between
-              students and their local communities, and empowering students to overcome
+              students and their local communitiesto="/", and empowering students to overcome
               fears and misconceptions towards how difficult it is to get started with tech.
             </p>
           </div>
