@@ -15,6 +15,13 @@ import { Button } from "@material-ui/core";
 import styles from "./PastEvents.module.css";
 
 class PastEvents extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isOpen: false
+    };
+    this.myRef = React.createRef();
+  }
   render() {
     return (
       <div>
@@ -69,9 +76,9 @@ class PastEvents extends Component {
               </MDBCollapse>
             </MDBNavbar>
           </Router>
-        </div>
-        <div>
-          <h1>Jason was here.</h1>
+          <div>
+            <h1>Jason was here.</h1>
+          </div>
         </div>
       </div>
     );
