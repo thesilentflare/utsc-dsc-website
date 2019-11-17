@@ -116,6 +116,11 @@ class Landing extends Component{
               <comp.GoalCards/>
           </div>
 
+          {/*Team Section*/}
+          <div className="section-team" ref="team">
+            <comp.Team/>
+          </div>
+
           {/*Google Calendar embed section*/}
           <div className="section-calendar" ref="calendar">
             <h2 className="h6-responsive"><b>Calendar</b></h2>
