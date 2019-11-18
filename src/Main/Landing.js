@@ -118,7 +118,7 @@ class Landing extends Component{
 
           {/*Team Section*/}
           <div className="section-team" ref="team">
-            <comp.Team/>
+            <comp.TeamSection/>
           </div>
 
           {/*Google Calendar embed section*/}
