@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import "./TeamSection.css"
 
 class TeamSection extends Component {
   render() {
@@ -14,14 +15,14 @@ class TeamSection extends Component {
                   class="col-5 avatar w-100 white d-flex justify-content-center align-items-center"
                 >
                   <img
-                    src="https://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
+                    src="./Assets/TeamPics/kevinzhang.jpg"
                     class="img-fluid rounded-circle z-depth-1"
                   />
                 </div>
                 <div class="col-7">
                   <h6 class="font-weight-bold pt-2">Kevin Zhang</h6>
                   <p class="text-muted">
-                    Co-President
+                    Co-Chair
                   </p>
                 </div>
               </div>
@@ -32,14 +33,14 @@ class TeamSection extends Component {
                   class="col-5 avatar w-100 white d-flex justify-content-center align-items-center"
                 >
                   <img
-                    src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg"
+                    src="./Assets/TeamPics/calebdsouza.jpg"
                     class="img-fluid rounded-circle z-depth-1"
                   />
                 </div>
                 <div class="col-7">
                   <h6 class="font-weight-bold pt-2">Caleb Dsouza</h6>
                   <p class="text-muted">
-                    Co-President
+                    Co-Chair
                   </p>
                 </div>
               </div>
@@ -50,7 +51,7 @@ class TeamSection extends Component {
                   class="col-5 avatar w-100 white d-flex justify-content-center align-items-center"
                 >
                   <img
-                    src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg"
+                    src="./Assets/TeamPics/michaelduong.jpg"
                     class="img-fluid rounded-circle z-depth-1"
                   />
                 </div>
@@ -68,12 +69,12 @@ class TeamSection extends Component {
                   class="col-5 avatar w-100 white d-flex justify-content-center align-items-center"
                 >
                   <img
-                    src="https://mdbootstrap.com/img/Photos/Avatars/img%20(2).jpg"
+                    src="./Assets/TeamPics/amynichols.jpg"
                     class="img-fluid rounded-circle z-depth-1"
                   />
                 </div>
                 <div class="col-7">
-                  <h6 class="font-weight-bold pt-2">Amy Nicols</h6>
+                  <h6 class="font-weight-bold pt-2">Amy Nichols</h6>
                   <p class="text-muted">
                     VP of Finance
                   </p>
@@ -86,7 +87,25 @@ class TeamSection extends Component {
                   class="col-5 avatar w-100 white d-flex justify-content-center align-items-center"
                 >
                   <img
-                    src="https://mdbootstrap.com/img/Photos/Avatars/img%20(7).jpg"
+                    src="./Assets/TeamPics/jeffzhao.jpg"
+                    class="img-fluid rounded-circle z-depth-1"
+                  />
+                </div>
+                <div class="col-7">
+                  <h6 class="font-weight-bold pt-2">Jeff Zhao</h6>
+                  <p class="text-muted">
+                    VP of Marketing
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-5">
+              <div class="row d-flex align-items-center">
+                <div
+                  class="col-5 avatar w-100 white d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="./Assets/TeamPics/brianyang.jpg"
                     class="img-fluid rounded-circle z-depth-1"
                   />
                 </div>
@@ -122,14 +141,14 @@ class TeamSection extends Component {
                   class="col-5 avatar w-100 white d-flex justify-content-center align-items-center"
                 >
                   <img
-                    src="https://mdbootstrap.com/img/Photos/Avatars/img%20(8).jpg"
+                    src="./Assets/TeamPics/smitpatel.jpg"
                     class="img-fluid rounded-circle z-depth-1"
                   />
                 </div>
                 <div class="col-7">
-                  <h6 class="font-weight-bold pt-2">Jeff Zhao</h6>
+                  <h6 class="font-weight-bold pt-2">Smit Patel</h6>
                   <p class="text-muted">
-                    VP of Marketing
+                    VP of Technology
                   </p>
                 </div>
               </div>
@@ -140,14 +159,14 @@ class TeamSection extends Component {
                   class="col-5 avatar w-100 white d-flex justify-content-center align-items-center"
                 >
                   <img
-                    src="https://mdbootstrap.com/img/Photos/Avatars/img%20(19).jpg"
+                    src="./Assets/TeamPics/gavinleung.jpg"
                     class="img-fluid rounded-circle z-depth-1"
                   />
                 </div>
                 <div class="col-7">
-                  <h6 class="font-weight-bold pt-2">Caroline Thompson</h6>
+                  <h6 class="font-weight-bold pt-2">Gavin Leung</h6>
                   <p class="text-muted">
-                    Junior Data Engineer
+                    UX Lead
                   </p>
                 </div>
               </div>
@@ -158,14 +177,14 @@ class TeamSection extends Component {
                   class="col-5 avatar w-100 white d-flex justify-content-center align-items-center"
                 >
                   <img
-                    src="https://mdbootstrap.com/img/Photos/Avatars/img%20(11).jpg"
+                    src="./Assets/TeamPics/richardhong.jpg"
                     class="img-fluid rounded-circle z-depth-1"
                   />
                 </div>
                 <div class="col-7">
-                  <h6 class="font-weight-bold pt-2">Anna Polkovsky</h6>
+                  <h6 class="font-weight-bold pt-2">Richard Hong</h6>
                   <p class="text-muted">
-                    Marketing Specialist
+                    Software Developer
                   </p>
                 </div>
               </div>

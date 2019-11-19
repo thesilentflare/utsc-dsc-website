@@ -54,6 +54,11 @@ class Landing extends Component{
                       </MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem className="links">
+                      <MDBNavLink to="/" onClick={()=>this.scrollTo(this.refs.team)}>
+                        Team
+                      </MDBNavLink>
+                    </MDBNavItem>
+                    <MDBNavItem className="links">
                       <MDBNavLink to="/" onClick={()=>this.scrollTo(this.refs.calendar)}>
                         Calendar
                       </MDBNavLink>
