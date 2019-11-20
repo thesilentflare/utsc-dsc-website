@@ -6,7 +6,7 @@ class TeamSection extends Component {
     return (
       <div class="container pt-1 my-5 z-depth-1">
         <section class="p-md-3 mx-md-5 text-lg-left">
-          <h2 class="text-center font-weight-bold mb-4 pb-4">Our Team</h2>
+          <h2 class="font-weight-bold mb-4 pb-4">Our Team</h2>
           {/*<p class="text-center lead mb-5 pb-2 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>*/}
           <div class="row">
             <div class="col-lg-4 col-sm-6 mb-5">
@@ -38,7 +38,7 @@ class TeamSection extends Component {
                   />
                 </div>
                 <div class="col-7">
-                  <h6 class="font-weight-bold pt-2">Caleb Dsouza</h6>
+                  <h6 class="font-weight-bold pt-2">Caleb D'souza</h6>
                   <p class="text-muted">
                     Co-Chair
                   </p>
