@@ -4,10 +4,10 @@ import "./TeamSection.css"
 class TeamSection extends Component {
   render() {
     return (
-      <div class="container pt-5 my-5 z-depth-1">
+      <div class="container pt-1 my-5 z-depth-1">
         <section class="p-md-3 mx-md-5 text-lg-left">
-          <h2 class="text-center font-weight-bold mb-4 pb-1">Our Team</h2>
-          <p class="text-center lead mb-5 pb-2 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+          <h2 class="text-center font-weight-bold mb-4 pb-4">Our Team</h2>
+          {/*<p class="text-center lead mb-5 pb-2 text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>*/}
           <div class="row">
             <div class="col-lg-4 col-sm-6 mb-5">
               <div class="row d-flex align-items-center">
@@ -58,7 +58,7 @@ class TeamSection extends Component {
                 <div class="col-7">
                   <h6 class="font-weight-bold pt-2">Michael Duong</h6>
                   <p class="text-muted">
-                    VP of Everything
+                    VP of Operations
                   </p>
                 </div>
               </div>
@@ -123,7 +123,7 @@ class TeamSection extends Component {
                   class="col-5 avatar w-100 white d-flex justify-content-center align-items-center"
                 >
                   <img
-                    src="https://mdbootstrap.com/img/Photos/Avatars/img%20(25).jpg"
+                    src="./Assets/TeamPics/philipzhang.jpg"
                     class="img-fluid rounded-circle z-depth-1"
                   />
                 </div>
