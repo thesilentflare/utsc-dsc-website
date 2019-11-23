@@ -111,7 +111,7 @@ class Landing extends Component{
               students on the Saint George, Missisauga, and Scarborough campuses with
               opportunities to understand, work with the latest and greatest in technology.
               We focus on promoting student innovation, enabling collaboration between
-              students and their local communitiesto="/", and empowering students to overcome
+              students and their local communities, and empowering students to overcome
               fears and misconceptions towards how difficult it is to get started with tech.
             </p>
           </div>
