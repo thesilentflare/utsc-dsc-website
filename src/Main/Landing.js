@@ -54,6 +54,11 @@ class Landing extends Component{
                       </MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem className="links">
+                      <MDBNavLink to="/" onClick={()=>this.scrollTo(this.refs.team)}>
+                        Team
+                      </MDBNavLink>
+                    </MDBNavItem>
+                    <MDBNavItem className="links">
                       <MDBNavLink to="/" onClick={()=>this.scrollTo(this.refs.calendar)}>
                         Calendar
                       </MDBNavLink>
@@ -114,6 +119,11 @@ class Landing extends Component{
           {/*Goal cards section*/}
           <div className="section-goals" ref="goals">
               <comp.GoalCards/>
+          </div>
+
+          {/*Team Section*/}
+          <div className="section-team" ref="team">
+            <comp.TeamSection/>
           </div>
 
           {/*Google Calendar embed section*/}
