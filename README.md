@@ -1,7 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# UTSC-DSC Website Template
 
-## Available Scripts
+First of all this is a React App with bootstrapping. You will need to run `npm i` to install the necessary packages.
 
+## .ENV file
+This file will have the major variables that you can change that will be reflected on the website such as logo images, the Google Calendar embed url, the Mailchimp signup action url and Firebase Credentials. Please change this file's values as needed so the website will work as intended.
+
+# **CRUCIAL DEPENDENCIES**
+
+## Firebase Events
+It is required that you set up a Firebase project and edit the `.env` file as the Events Carousel module grabs events that are in the Firebase database.
+Events in firebase must comply with the following fields:
+
+### Name
+varType= string, [name of the event]
+### Date
+varType= timestamp
+### Description
+varType= string, [description of the event, try to keep it within 2-3 sentences]
+### Fees
+varType= string, [fees if any]
+### Image
+varType= string, [this is an image associated to the event (url to the pic)]
+### Link
+varType= string, [this is the link to the event signup if it is required]
+### Signup
+varType= string, [Leave this blank if you have provided a signup link above]
+### Location
+varType= string, [location of the event, keep it brief]
+
+
+## Mailchimp Newsletter
+We use Mailchimp as our newsletter provider, and so our embedded signup module requires the Mailchimp Action URL to work. Please change the URL in the `.env` accordingly.
+
+
+## Google Embeds
+Google calendar and maps on our website are embeds, so you will need to grab your own relevant URLS that pertain to your calendar and map location and paste them into the `.env` file provided.
+
+
+## Pictures/images
+Place them in the `/public/` folder.
+
+## How to start
 In the project directory, you can run:
 
 ### `npm start`
@@ -12,11 +51,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.<br>
@@ -25,44 +59,33 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Firebase Deployment
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Initial Firebase-tools setup
+Install firebase tools using following command: `npm install -g firebase-tools`<br>
+Login to the firebase account by using `firebase login`<br>
+After successful login check if existing projects seeable using `firebase list`<br>
+If you see your projects, move on, otherwise redo above steps.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Creating firebase files setup
+Navigate to the website root folder, you should see `src` and `public folder` here.<br>
+Execute `firebase init` to create the firebase files.<br>
+Choose `Firestore`, `Hosting` and `Storage` using spacebar, then press `Enter`<br>
+Choose existing project, and choose the website project<br>
+Press `Enter` for default `firestore.rules`<br>
+Press `Enter` for default `firestore.indexes.json`<br>
+Choose to use public folder, do not overwrite existing one<br>
+Choose to use as single-page app, choose yes to overwrite public/index.html<br>
+Press `Enter` for default `storage.rules`<br>
+If all completed successfully, move on.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Deployment
+Run `npm run deploy`, making sure you have already run `npm i` and correct `.env` file.<br>
+Then run `firebase deploy`.<br>
+If successfully run, then site is deployed successfully.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Thank You
+Again we at UTSC-DSC hope that this template will help serve as a starting point in for your own DSC website and Thanks You for choosing our template!
