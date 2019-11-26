@@ -28,7 +28,8 @@ class Landing extends Component{
   scrollTo = (ref) => {
     var r = ref;
     window.scrollTo(0, r.offsetTop-100);
-    //this.collapse();
+    //FUNCTION DOES NOT EXIST.
+    this.collapse();
   }
   // main render function
   render(){
@@ -56,6 +57,11 @@ class Landing extends Component{
                     <MDBNavItem className="links">
                       <MDBNavLink to="/" onClick={()=>this.scrollTo(this.refs.about)}>
                         About
+                      </MDBNavLink>
+                    </MDBNavItem>
+                    <MDBNavItem className="links">
+                      <MDBNavLink to="/" onClick={()=>this.scrollTo(this.refs.team)}>
+                        Team
                       </MDBNavLink>
                     </MDBNavItem>
                     <MDBNavItem className="links">
@@ -119,6 +125,11 @@ class Landing extends Component{
           {/*Goal cards section*/}
           <div className="section-goals" ref="goals">
               <comp.GoalCards/>
+          </div>
+
+          {/*Team Section*/}
+          <div className="section-team" ref="team">
+            <comp.TeamSection/>
           </div>
 
           {/*Google Calendar embed section*/}
