@@ -4,6 +4,7 @@ MDBCollapse, MDBJumbotron, MDBIframe, MDBNavbarToggler} from 'mdbreact';
 import {Button} from '@material-ui/core';
 import { BrowserRouter as Router } from 'react-router-dom';
 import * as comp from "../Components";
+import Calendar from "../Components/Calendar/Calendar"
 import './Landing.css';
 
 class Landing extends Component{
@@ -18,6 +19,11 @@ class Landing extends Component{
   toggleCollapse = () => {
     this.setState({ isOpen: !this.state.isOpen });
   }
+ 
+  collapse = () => {
+    this.setState({ isOpen: false });
+  }
+
   // function that handles scrolling to the passed in ref
   scrollTo = (ref) => {
     var r = ref;
@@ -129,7 +135,7 @@ class Landing extends Component{
           {/*Google Calendar embed section*/}
           <div className="section-calendar" ref="calendar">
             <h2 className="h6-responsive"><b>Calendar</b></h2>
-            <MDBIframe src={process.env.REACT_APP_google_cal} frameborder="0" scrolling="no"/>
+            <Calendar />
           </div>
 
           {/*Mailchimp Newsletter Signup Section*/}
