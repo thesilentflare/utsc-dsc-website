@@ -19,7 +19,7 @@ class Landing extends Component{
   toggleCollapse = () => {
     this.setState({ isOpen: !this.state.isOpen });
   }
- 
+
   collapse = () => {
     this.setState({ isOpen: false });
   }
@@ -129,7 +129,7 @@ class Landing extends Component{
 
           {/*Team Section*/}
           <div className="section-team" ref="team">
-            <comp.TeamSection/>
+            <comp.TeamSection2/>
           </div>
 
           {/*Google Calendar embed section*/}
