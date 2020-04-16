@@ -37,6 +37,28 @@ function getEvents() {
 
 }
 
+function getMembers(col){
+
+  return new Promise(function(resolve, reject){
+    var res = {};
+    db.collection(col).get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function (doc) {
+            var dataJSON = JSON.stringify(doc.data());
+            res[doc.id] = dataJSON;
+            //console.log(dataJSON);
+        });
+        resolve(res);
+    })
+    .catch(function(error) {
+        console.log("Error getting documents", error);
+        reject(error);
+    });
+})
+}
+
+
+
 /**
  * this show cases how to use the promisified json object
  */
@@ -52,5 +74,6 @@ function test() {
 module.exports = {
     getEvents,
     test,
-    getTimestamp
+    getTimestamp,
+    getMembers
 }
